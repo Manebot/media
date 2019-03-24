@@ -99,13 +99,13 @@ public class Entry implements PluginEntry {
                         sender.sendMessage(" Max. physical memory: " + formatBytes(maxPhysicalBytes));
                     }
                 })
-                .onEnable(() -> {
+                .onEnable((future) -> {
                     try {
                         FFmpegError.checkError("avformat_network_init", avformat.avformat_network_init());
                     } catch (FFmpegException e) {
                         throw new PluginException(e);
                     }
-                }).onDisable(() -> {
+                }).onDisable((future) -> {
                     try {
                         FFmpegError.checkError("avformat_network_deinit", avformat.avformat_network_deinit());
                     } catch (FFmpegException e) {

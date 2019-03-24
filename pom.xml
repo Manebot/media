@@ -33,7 +33,7 @@
             <groupId>com.github.manevolent</groupId>
             <artifactId>jbot-core</artifactId>
             <scope>provided</scope>
-            <version>0.1.2</version>
+            <version>0.1.4</version>
         </dependency>
 
         <dependency>
