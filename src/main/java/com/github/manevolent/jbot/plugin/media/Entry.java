@@ -12,6 +12,7 @@ import com.github.manevolent.jbot.command.executor.chained.argument.CommandArgum
 import com.github.manevolent.jbot.command.executor.chained.argument.CommandArgumentString;
 import com.github.manevolent.jbot.plugin.Plugin;
 import com.github.manevolent.jbot.plugin.PluginException;
+import com.github.manevolent.jbot.plugin.PluginType;
 import com.github.manevolent.jbot.plugin.java.PluginEntry;
 import org.bytedeco.javacpp.avcodec;
 import org.bytedeco.javacpp.avformat;
@@ -33,6 +34,7 @@ public class Entry implements PluginEntry {
     @Override
     public Plugin instantiate(Plugin.Builder builder) throws PluginException {
         return builder
+                .type(PluginType.DEPENDENCY)
                 .command("media", new AnnotatedCommandExecutor() {
                     @Command(description = "Gets media subsystem version", permission = "media.version")
                     public void version(CommandSender sender,
