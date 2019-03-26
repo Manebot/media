@@ -22,6 +22,10 @@
             <name>tomp2p</name>
             <url>http://tomp2p.net/dev/mvn/</url>
         </repository>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
     </repositories>
 
     <distributionManagement>
