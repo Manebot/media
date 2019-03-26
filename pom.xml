@@ -4,16 +4,43 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.manevolent</groupId>
-    <artifactId>jbot-media</artifactId>
-    <version>0.2.3</version>
-
-    <repositories>
+	<repositories>
         <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
+            <id>public</id>
+            <name>Team Lixo public release repository</name>
+            <url>https://maven.teamlixo.net/repository/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>tomp2p.net</id>
+            <name>tomp2p</name>
+            <url>http://tomp2p.net/dev/mvn/</url>
         </repository>
     </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>public-releases</id>
+            <name>Team Lixo public release repository</name>
+            <url>https://maven.teamlixo.net/repository/public-releases/</url>
+            <uniqueVersion>true</uniqueVersion>
+        </repository>
+        <snapshotRepository>
+            <id>public-snapshots</id>
+            <name>Team Lixo public release snapshots</name>
+            <url>https://maven.teamlixo.net/repository/public-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+	
+    <groupId>com.github.manevolent</groupId>
+    <artifactId>jbot-media</artifactId>
+    <version>0.2.3-SNAPSHOT</version>
 
     <build>
         <plugins>
@@ -33,7 +60,7 @@
             <groupId>com.github.manevolent</groupId>
             <artifactId>jbot-core</artifactId>
             <scope>provided</scope>
-            <version>0.1.6</version>
+            <version>0.1.6-SNAPSHOT</version>
         </dependency>
 
         <dependency>
