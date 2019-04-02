@@ -1,4 +1,4 @@
-package com.github.manevolent.jbot.plugin.media.filter.video;
+package io.manebot.plugin.media.filter.video;
 
 import com.github.manevolent.ffmpeg4j.VideoFrame;
 import com.github.manevolent.ffmpeg4j.filter.MediaFilter;

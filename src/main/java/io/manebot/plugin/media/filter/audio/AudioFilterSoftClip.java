@@ -1,4 +1,4 @@
-package com.github.manevolent.jbot.plugin.media.filter.audio;
+package io.manebot.plugin.media.filter.audio;
 
 import com.github.manevolent.ffmpeg4j.AudioFrame;
 import com.github.manevolent.ffmpeg4j.filter.audio.AudioFilter;

@@ -1,4 +1,4 @@
-package com.github.manevolent.jbot.plugin.media.filter.audio;
+package io.manebot.plugin.media.filter.audio;
 
 public class SoftClip {
     private final int channels;

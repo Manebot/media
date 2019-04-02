@@ -42,9 +42,9 @@
         </snapshotRepository>
     </distributionManagement>
 	
-    <groupId>com.github.manevolent</groupId>
-    <artifactId>jbot-media</artifactId>
-    <version>0.2.3-SNAPSHOT</version>
+    <groupId>io.manebot.plugin</groupId>
+    <artifactId>media</artifactId>
+    <version>0.2.3</version>
 
     <build>
         <plugins>
@@ -61,10 +61,10 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.manevolent</groupId>
-            <artifactId>jbot-core</artifactId>
+            <groupId>io.manebot</groupId>
+            <artifactId>manebot-core</artifactId>
             <scope>provided</scope>
-            <version>0.1.6-SNAPSHOT</version>
+            <version>0.1.6.1</version>
         </dependency>
 
         <dependency>
