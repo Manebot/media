@@ -44,7 +44,7 @@
 	
     <groupId>io.manebot.plugin</groupId>
     <artifactId>media</artifactId>
-    <version>0.2.5</version>
+    <version>0.2.6</version>
 
     <build>
         <plugins>
@@ -64,7 +64,7 @@
             <groupId>io.manebot</groupId>
             <artifactId>manebot-core</artifactId>
             <scope>provided</scope>
-            <version>0.1.6.1</version>
+            <version>0.1.6.4</version>
         </dependency>
 
         <dependency>
