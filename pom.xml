@@ -44,7 +44,7 @@
 	
     <groupId>io.manebot.plugin</groupId>
     <artifactId>media</artifactId>
-    <version>0.2.7</version>
+    <version>0.2.8-SNAPSHOT</version>
 
     <build>
         <plugins>
@@ -70,7 +70,7 @@
         <dependency>
             <groupId>com.github.manevolent</groupId>
             <artifactId>ffmpeg4j</artifactId>
-            <version>4ce451b0e42d0f5eab81436935773ffb28fe421d</version>
+            <version>4.1-1.4.4</version>
         </dependency>
 
         <dependency>
