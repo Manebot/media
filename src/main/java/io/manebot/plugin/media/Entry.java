@@ -14,10 +14,9 @@ import io.manebot.plugin.Plugin;
 import io.manebot.plugin.PluginException;
 import io.manebot.plugin.PluginType;
 import io.manebot.plugin.java.PluginEntry;
-import org.bytedeco.javacpp.avcodec;
-import org.bytedeco.javacpp.avformat;
-import org.bytedeco.javacpp.avutil;
-import org.bytedeco.javacpp.swresample;
+import org.bytedeco.ffmpeg.avcodec.*;
+import org.bytedeco.ffmpeg.avformat.*;
+import org.bytedeco.ffmpeg.global.*;
 
 import static org.bytedeco.javacpp.Pointer.*;
 import static org.bytedeco.javacpp.Pointer.formatBytes;
@@ -52,7 +51,7 @@ public class Entry implements PluginEntry {
                                    @CommandArgumentLabel.Argument(label = "format") String format,
                                    @CommandArgumentString.Argument(label = "name") String name)
                     throws CommandArgumentException {
-                avformat.AVInputFormat inputFormat = avformat.av_find_input_format(name);
+                AVInputFormat inputFormat = avformat.av_find_input_format(name);
                 if (inputFormat == null)
                     throw new CommandArgumentException("Unknown format.");
 
@@ -66,7 +65,7 @@ public class Entry implements PluginEntry {
                                     @CommandArgumentLabel.Argument(label = "decoder") String format,
                                     @CommandArgumentString.Argument(label = "name") String name)
                     throws CommandExecutionException {
-                avcodec.AVCodec codec;
+                AVCodec codec;
 
                 try {
                     codec = FFmpeg.getCodecByName(name);
