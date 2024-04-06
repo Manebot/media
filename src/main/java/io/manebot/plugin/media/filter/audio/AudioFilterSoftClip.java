@@ -20,7 +20,7 @@ public class AudioFilterSoftClip extends AudioFilter {
     }
 
     @Override
-    public void close() throws Exception {
+    public void close() throws IOException {
         // Do nothing
     }
 }
